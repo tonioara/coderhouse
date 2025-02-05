@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: rgb(5, 5, 5);
+    color: aliceblue;
+
+}
+.footer {
+    color: aliceblue;
+    grid-area: footer;
+}
+.principal{
+    grid-area: principal;
+}
+.logo-agencia{
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+}
+.img-principal{
+    width: 500px;
+    height: 500px;
+    margin: 2rem;
+}
+.logo-fb{
+    width: 35px;
+    height: 35px;
+}
+.logo-insta{
+    width: 35px;
+    height: 35px;
+}
+.logo-X{
+    width: 35px;
+    height: 35px;
+}
+/**Aca empiezo a darle movimiento a mis contenedores, y ubicarlos como me gustaria/*/
+header{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:1fr 120px;
+    grid-template-areas: 
+                        "link link link link"
+                        "nav nav nav nav ";
+}
+.encabezado{
+
+   grid-area: link;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+.encabezado a{
+    list-style: none;
+    background-color: aliceblue;
+    color: black;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 15px;
+}
+.navegador li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+.navegador li a{
+    display: flex;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 15px;
+}
+.navegador{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+.navbar{
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 20px;
+    margin: 15px;
+    grid-area: nav;
+    
+    
+}
+/*EMPEZAMOS DANDO ESTILOS A LA PARTE PRINCIPAL DEL INDEX*/
+.conteiner{
+    display: grid;
+    grid-template-rows: 120px repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "titulo-res titulo-res titulo-res"
+                         "buscador buscador buscador"
+                         "section section section";
+
+}
+
+   
+
+h2{
+
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+.buscador-vuelos ul{
+    list-style-type: none;
+}
+.card-vuelo{
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+.buscador-vuelos{
+    grid-area: buscador;
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(43, 43, 56);
+    margin: 2rem ;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: large;
+    margin-left: 25%;
+   
+    
+    /**
+    text-align: center;*//
+    
+}
+.buscador-vuelos label{
+    width: 150px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 4rem;
+    
+    
+}
+.buscador-vuelos input{
+    width: 250px;
+    height: 20px;
+   
+    
+}
+.btn-vuelo{
+    
+    margin-top: 2rem;
+    margin-left: 40%;
+    color: rgb(240, 234, 234);
+    background-color: black;
+    padding: 0.5rem;
+    border: 2px solid rgba(121, 111, 111, 0.678);
+    border-radius: 20px;
+}
+/** aca empiezo a trabajar con el centro de mi pagina principal*/
+
+
+
+
+
+
+
+
+.titulo-reseña{
+    grid-area: titulo-res;
+    display: flex;
+    justify-content: center;
+    text-align: centert;
+    text-decoration: underline;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    grid-area: titulo;
+}
+
+
+
+
+.section{
+    grid-area: section;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+                        "principal-1 principal-2 principal-3" ;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    gap: 1rem;
+}
+.principal-1{
+    grid-area: principal-1;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    align-items: center;
+    justify-items: center;
+    padding: 0 25px;
+    font-weight: 800;
+    border: 1px solid white;
+    border-radius: 20px ;
+    text-align: center;
+}
+.principal-2{
+    grid-area: principal-2;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    align-items: center;
+    justify-items: center;
+    padding: 0 25px;
+    font-weight: 800;
+    border: 1px solid white;
+    border-radius: 20px ;
+    text-align: center;
+    
+}
+.principal-3{
+    grid-area: principal-3;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    align-items: center;
+    justify-items: center;
+    padding: 0 25px;
+    font-weight: 800;
+    border: 1px solid white;
+    border-radius: 20px ;
+    text-align: center;
+}
+/** ACA EMPEZAMOS AL TRABAJAR EL FOOTER**/
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    margin-top: 4rem;
+    gap: 2rem;
+   
+}
+.derechos{
+    margin: 2rem;
+}
+
+.footer-icono a{
+    text-decoration: none;
+    color: #ffffff;
+      
+}
+
+
+
+
+
+
+/** ACA DAMOS ESTILOS A PAG DE CRUCEROS**/
+.img-cruceros{
+    height: 300px;
+    width: 300px;
+}
+.cruceros-principal{
+    display: grid;
+}
+.titulo-cruceros{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.card-individual{
+    
+    border: 2px solid white;
+    border-radius: 20px;
+    min-height: 100px;
+    font-weight: bold;
+    padding: 30px;
+    margin: 20px;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    text-align: center;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+      
+}
+.card-cruceros{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+    
+}
+/** ACA DAMOS CLASES A LA PAG OFERTAS**/
+.img-HV{
+    width: 250px;
+    height: 200px;
+    margin-top: 4rem;
+}
+
+.card-Hotel{
+    display: grid;
+    width: 90%;
+    height: auto;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "card1 card1 "
+                         "card2 card2 " 
+                         "card3 card3 ";
+    gap: 1rem;
+    margin-top: 3rem;
+    
+}
+.card-Hotel h4, p{
+    font-size: large;
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+.card-indihotel-1{
+    grid-area: card1;
+    /**grid-column-start: 1/3 ;
+    grid-row: 1/3;**/
+    height: 500px;
+    width: 900px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    text-align: center;
+    justify-content: center;
+}
+.card-indihotel-2{
+    grid-area: card2;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    height: 500px;
+    width: 900px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    text-align: center;
+
+}
+.card-indihotel-3{
+    /**grid-area: card3;
+    grid-column: 1/3;**/
+    grid-area: card3;
+    grid-row: 3/3;
+    height: 500px;
+    width: 900px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    text-align: center;
+
+}
+.card-viajes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 5rem;
+    border: 4px solid white ;
+    border-radius: 20px;
+}
+.card-lugares{
+    background-color: rgb(3, 3, 3);
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    height: fit-content;
+    width: 500px;
+    margin: 2rem;
+    text-align: center;
+}
+.card-luagres h2,p{
+    font-size: large;
+    margin-top: 1rem;
+    
+}
+/*ACA EMPEZAMOS A DARLE ESTILOS A LA PAG PAQUETES*/
+.pag-paq{
+    background-color: rgb(0, 0, 0);
+}
+.principal-paq{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*grid-template-rows: repeat(3,1fr);*/
+    gap: 2rem;
+    grid-template-areas: "titulo titulo titulo"
+                          "miami cusco madrid"
+                          "barce bali australia";
+}
+.titulo-card-paq{
+    grid-area: titulo;
+    grid-column: 2/3;
+    height: fit-content;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(102, 92, 92, 0.8);
+    width: 500px;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: antiquewhite;
+    color: black;
+    
+
+}
+.card-paq1{
+    grid-area: miami;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    
+    padding: 2rem;
+}
+.card-paq2{
+    grid-area: cusco;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    
+    padding: 2rem;
+}
+.card-paq3{
+    grid-area: madrid;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    
+    padding: 2rem;
+}
+.card-paq4{
+    grid-area: barce;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    
+    padding: 2rem;
+}.card-paq5{
+    grid-area: bali;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+   
+    padding: 2rem;
+}.card-paq6{
+    grid-area: australia;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    
+    padding: 2rem;
+}
+.img-principal-alaska{
+    width: 350px;
+    height: 350px;
+}
+.img-principal-miami{
+    width: 350px;
+    height: 350px;
+}
+.paq-cruceros{
+
+    display: grid;
+    grid-template-areas: "titulo2 titulo2 titulo2"
+                          "larga2 miami2 alaska2";
+}
+.titulo-crucero-paq{
+    grid-area: titulo2;
+    grid-column: 2/3;
+    height: fit-content;
+    text-align: center;
+    border: 2px solid rgb(90, 42, 42);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(85, 77, 77, 0.8);
+    width: 400px;
+    margin-top: 3rem;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: antiquewhite;
+    color: black;
+}
+.card-paq-cruceros1{
+    grid-area: larga2;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    width: 500px;
+    padding: 2rem;
+
+}
+.card-paq-cruceros2{
+    grid-area: miami2;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    width: 500px;
+    padding: 2rem;
+
+}
+.card-paq-cruceros3{
+    grid-area: alaska2;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    width: 500px;
+    padding: 2rem;
+
+}
+/** estilos de pagina nosotros**/
+.principal-nos{
+    display: grid;
+    
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "titulo-nos titulo-nos titulo-nos titulo-nos"
+                          "card-nos1 card-nos2 card-nos3 card-nos4"
+                          "texto     texto   texto   texto";
+    margin: 3rem;
+
+}
+.titulo-nos{
+    grid-area: titulo-nos;
+    justify-self: center;
+    height: fit-content;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(102, 92, 92, 0.8);
+    width: 300px;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: antiquewhite;
+    color: black;
+}
+.card-staff-1{
+    grid-area: card-nos1;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    width: 350px;
+    padding: 2rem;
+}
+.card-staff-2{
+    grid-area: card-nos2;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    width: 350px;
+    padding: 2rem;
+}
+.card-staff-3{
+    grid-area: card-nos3;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    width: 350px;
+    padding: 2rem;
+}
+.card-staff-4{
+    grid-area: card-nos4;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    width: 350px;
+    padding: 2rem;
+}
