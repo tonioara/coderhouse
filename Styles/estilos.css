@@ -166,7 +166,7 @@ body{
 
 }*/
 
-   
+   /*Dandole estilo a la parte central de mi index*/
 
 h2{
 
@@ -200,9 +200,9 @@ h2{
     
    
     
-    /**
-    text-align: center;*//
-    
+   
+   
+   
 }
 .buscador-vuelos label{
     width: 150px;
@@ -229,7 +229,7 @@ h2{
     border: 2px solid rgba(121, 111, 111, 0.678);
     border-radius: 20px;
 }
-/** aca empiezo a trabajar con el centro de mi pagina principal*/
+/* aca empiezo a trabajar con el centro de mi pagina principal*/
 
 
 
@@ -584,15 +584,16 @@ footer{
 }
 /** estilos de pagina nosotros**/
 .principal-nos{
+    width: 100%;
+   
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "titulo-nos titulo-nos titulo-nos "
-                          "card-nos1 card-nos2 card-nos3"
-                          "texto     texto   texto";
+                          "card-nos1 card-nos2 card-nos3";
     margin: 3rem;
-    gap: 1rem;
+    gap: 2rem;
 
 }
 .titulo-nos{
@@ -602,42 +603,42 @@ footer{
     text-align: center;
     border: 2px solid rgb(37, 32, 32);
     border-radius: 20px;
-    box-shadow: 0px 0px 30px rgba(175, 62, 62, 0.8);
+    box-shadow: 0px 0px 30px rgba(206, 195, 195, 0.8);
     width: 300px;
     padding: 2rem;
     margin: 3rem;
-    background-color: rgb(240, 139, 7);
-    color: rgb(27, 25, 25);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .card-staff-1{
-    width: 85%;
+    width: 95%;
     grid-area: card-nos1;
     text-align: center;
     border: 2px solid white;
     border-radius: 20px;
     box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
-    width: 350px;
+    
     padding: 2rem;
     
 }
 .card-staff-2{
-    width: 85%;
+    width: 95%;
     grid-area: card-nos2;
     text-align: center;
     border: 2px solid white;
     border-radius: 20px;
     box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
-    width: 350px;
+   
     padding: 2rem;
 }
 .card-staff-3{
-    width: 85%;
+    width: 95%;
     grid-area: card-nos3;
     text-align: center;
     border: 2px solid white;
     border-radius: 20px;
     box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
-    width: 350px;
+    
     padding: 2rem;
 }
 
