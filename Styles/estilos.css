@@ -652,7 +652,7 @@ footer{
 @media (max-width: 478px){
     header{
         width: 100%;
-    }
+    }/*
     .encabezado{
         
         width: 100%;
@@ -680,6 +680,19 @@ footer{
     .navegador a{
         font-size: 13px;
         width: auto;
+    }*/
+    .navbar-mio div a{
+        width: 80%;
+        font-weight: 12px;
+        font-size: small;
+    }
+    .nav-mio{
+        width: 80%;
+    }
+    .navegador-mio li{
+        width: 75%;
+        font-weight: 12px;
+        font-size: small;
     }
     .section{
      
@@ -790,7 +803,7 @@ footer{
 
 }
 @media (min-width: 479px) and (max-width:780px){
-    .encabezado{
+    /*.encabezado{
         
         width: 100%;
         display: flex;
@@ -817,6 +830,11 @@ footer{
     .navegador a{
         font-size: 13px;
         width: auto;
+    }*/
+    .navegador-mio li{
+        width: 75%;
+        font-weight: 14px;
+        font-size: medium;
     }
         
     .section{
