@@ -6,6 +6,7 @@
 body{
     background-color: rgb(5, 5, 5);
     color: aliceblue;
+    font-family: "Roboto", serif;
 
 }
 .footer {
@@ -587,7 +588,7 @@ footer{
     width: 100%;
    
     display: grid;
-    justify-content: center;
+    justify-content: space-evenly;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "titulo-nos titulo-nos titulo-nos "
