@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+   
 }
 body{
     background-color: rgb(5, 5, 5);
@@ -649,7 +649,7 @@ footer{
 
 
 /**Trabajando con mediaquerys*/
-@media (max-width: 478px){
+@media (max-width: 768px){
     header{
         width: 100%;
     }/*
@@ -682,16 +682,24 @@ footer{
         width: auto;
     }*/
     .navbar-mio div a{
-        width: 80%;
-        font-weight: 12px;
+        width: 60%;
+        font-weight: 10px;
         font-size: small;
     }
     .nav-mio{
-        width: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        font-weight: 10px;
+        font-size: small;
     }
+    
     .navegador-mio li{
-        width: 75%;
-        font-weight: 12px;
+        padding: 5px;
+
+        width: 100%;
+        font-weight: 10px;
         font-size: small;
     }
     .section{
@@ -802,7 +810,7 @@ footer{
     }
 
 }
-@media (min-width: 479px) and (max-width:780px){
+@media (min-width: 769px) and (max-width: 1024px){
     /*.encabezado{
         
         width: 100%;
@@ -945,7 +953,7 @@ footer{
         gap: 1rem;
     }
 }
-@media (min-width:781px)and (max-width:1300px)
+@media (min-width: 1025px)
 {
     .encabezado{
     
