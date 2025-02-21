@@ -702,6 +702,7 @@ footer{
         display: flex;
         align-items: center;
         justify-self: center;
+        justify-content: center;
         margin: 1rem;
         border-radius: 20px;
         box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
@@ -720,6 +721,9 @@ footer{
         border-radius: 20px;
         background-color: bisque;
         
+    }
+    .navbar-brand{
+        margin-right: 0px;
     }
     .navegador-mio li{
         align-self: center;
