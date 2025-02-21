@@ -712,10 +712,11 @@ footer{
         justify-content: center;
     }
     .navegador-mio{
-        width: 90%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-left: inherit;
         list-style: none;
         text-decoration: none;
         justify-content: center;
@@ -736,8 +737,8 @@ footer{
         border-radius: 20px;
     }
     h1{
-        font-size: medium;
-        font-weight: 300;
+        font-size:large;
+        font-weight: 400;
     }
 
     .section{
@@ -749,12 +750,14 @@ footer{
     }
     .buscador-vuelos{
         font-size: small;
+        padding: 0;
     }
     .card-vuelo ul{
         margin-right: 2rem;
     }
     .principal-1,.principal-2,.principal-3{
-        font-size: medium;
+        font-size: small;
+        font-weight: 600;
         justify-self: center;
         align-items: center;
 
