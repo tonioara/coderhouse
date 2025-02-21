@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: 0;
    
 }
 body{
@@ -16,9 +17,6 @@ body{
     color: aliceblue;
     grid-area: footer;
 }
-.principal{
-    grid-area: principal;
-}
 .logo-agencia{
     width: 120px;
     height: 120px;
@@ -26,8 +24,8 @@ body{
     
 }
 .img-principal{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     
 }
 .logo-fb{
@@ -43,8 +41,8 @@ body{
     height: 35px;
 }
 .navbar-mio{
-    position: relative;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
@@ -62,24 +60,16 @@ body{
     padding: 15px;
 }
 .nav-mio{
-   
-   
-    width:auto;
-    
+    width:100%;
     color: black;
-    display: flex;
-    justify-content: center;
-    
 }
 .navegador-mio{
     
-    
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     list-style: none;
     text-decoration: none;
-    justify-items: center;
+    justify-content: center;
     border: 1px solid white;
     border-radius: 20px;
     background-color: bisque;
@@ -95,7 +85,6 @@ body{
     padding: 0.5rem;
     align-items: center;
     justify-content: space-between;
-    /*background-color: rgb(231, 226, 226);*/
     border: 1px solid black;
     border-radius: 20px;
 }
@@ -182,6 +171,7 @@ h2{
 }
 .buscador-vuelos ul{
     list-style-type: none;
+    margin-left: 1rem;
 }
 .card-vuelo{
     justify-self: center;
@@ -225,8 +215,9 @@ h2{
 }
 .btn-vuelo{
     
+    display: flex;
+    justify-self: center;
     margin-top: 2rem;
-    margin-left: 40%;
     color: rgb(240, 234, 234);
     background-color: black;
     padding: 0.5rem;
@@ -263,7 +254,7 @@ h2{
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
-}
+}/*
 .principal-1{
     grid-area: principal-1;
     box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
@@ -274,7 +265,21 @@ h2{
     border: 1px solid white;
     border-radius: 20px ;
     text-align: center;
-}
+}*/
+.principal-1, .principal-2, .principal-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+    box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
+    border: 1px solid white;
+    border-radius: 20px ;
+    padding: 1rem;
+    margin: 1rem;
+}/*
 .principal-2{
     grid-area: principal-2;
     box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
@@ -297,7 +302,7 @@ h2{
     border: 1px solid white;
     border-radius: 20px ;
     text-align: center;
-}
+}*/
 /** ACA EMPEZAMOS AL TRABAJAR EL FOOTER**/
 
 footer{
@@ -309,7 +314,11 @@ footer{
     gap: 2rem;
    
 }
+
+
+
 .derechos{
+   
     margin: 2rem;
 }
 
@@ -647,13 +656,12 @@ footer{
 }
 
 
-
 /**Trabajando con mediaquerys*/
 @media (max-width: 768px){
-    header{
-        width: 100%;
-    }/*
-    .encabezado{
+
+
+
+   /* .encabezado{
         
         width: 100%;
         display: flex;
@@ -681,33 +689,67 @@ footer{
         font-size: 13px;
         width: auto;
     }*/
-    .navbar-mio div a{
-        width: 60%;
-        font-weight: 10px;
-        font-size: small;
+    .img-logo-smal{
+        width: 70px;
+        height: 70px;
     }
-    .nav-mio{
-        width: 100%;
+    .navbar-mio{
         display: flex;
         flex-direction: row;
-        gap: 5px;
-        font-weight: 10px;
-        font-size: small;
-    }
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 1rem;
+        border-bottom: 1px solid white;
     
-    .navegador-mio li{
-        padding: 5px;
-
-        width: 100%;
-        font-weight: 10px;
-        font-size: small;
     }
+
+    .container-mio{
+        font-size: smaller;
+        font-weight: 300;
+    }
+    .nav-mio{
+        width:100%;
+        color: black;
+        justify-content: center;
+    }
+    .navegador-mio{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 3rem;
+        list-style: none;
+        text-decoration: none;
+        justify-content: center;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: bisque;
+        
+    }
+    .navegador-mio li{
+        align-self: center;
+        font-weight:500;
+        font-size: small;
+        margin: 1rem;
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
     .section{
      
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
+    }
+    .buscador-vuelos{
+        font-size: small;
+    }
+    .card-vuelo ul{
+        margin-right: 2rem;
     }
     .principal-1,.principal-2,.principal-3{
         font-size: medium;
@@ -735,6 +777,7 @@ footer{
 
 
     }
+
     .card-indihotel-1, .card-indihotel-2,.card-indihotel-3{
         width: auto;
         height: fit-content;
@@ -808,8 +851,15 @@ footer{
         gap: 2rem;
 
     }
-
+    /*medias en el footer*/
+    .footer h3{
+        font-size: medium;
+    }
+    .derechos h4{
+        font-size: xx-small;
+    }
 }
+
 @media (min-width: 769px) and (max-width: 1024px){
     /*.encabezado{
         
@@ -953,154 +1003,150 @@ footer{
         gap: 1rem;
     }
 }
-@media (min-width: 1025px)
-{
-    .encabezado{
-    
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    figure{
-        width: auto;
-        justify-content: center;
-    }
-    .encabezado a{
-        font-size: 16px;
-        width: auto;
-        padding: 10px;
-    }
-    .navegador{
-        width: 100%;
-       
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        
-    }
-    .navegador a{
-        font-size: 13px;
-        width: auto;
-    }
-        
-    .section{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-
-    }
-    .img-principal{
-        width:100%;
-
-    }
-    .principal-1,.principal-2,.principal-3{
-        font-size: medium;
-        justify-self: center;
-        margin:2rem;
-       
-        width: 50%;
-        text-align: center;
-    }
-        /**Aca usamos mediaquerys para ofertas*/
-    .principal-cruceros{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-Hotel{
-        width: 90%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-    .card-indihotel-1,.card-indihotel-2,.card-indihotel-3{
-        width: auto;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        padding: 2rem;
-    }
-    .img-HV{
-        width: 320px;
-        height: 250px;
-    }
-    .card-viajes{
-        display: flex;
-        width: 70%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-lugares{
-        width: auto;
-        height: fit-content;
-        padding-bottom: 2rem;
-    }
-    /**aca usamos mediasquerys en pag paquetes*/
-    .principal-paq{
-        display: flex;
-        width: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    .paq-cruceros{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    .card-paq-cruceros1,.card-paq-cruceros2,.card-paq-cruceros2{
-        width:85%;
-    }
-    .card-paq1,.card-paq2,.card-paq3,.card-paq4,.card-paq5,.card-paq6{
-        width: 85%;
-    }
-    /*ACA usamos mediaquerys en la pag cruceros*/
-    .cruceros-principal{
-        width: 100%;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-cruceros{
-        width: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    /*Usan mediaquerys en pag nosotros*/
-    .principal-nos{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-staff-1,.card-staff-2,.card-staff-3{
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
+/* @media (min-width: 1025px) */
+/* { */
+    /* .encabezado{ */
+/*      */
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: space-evenly; */
+    /* } */
+    /* figure{ */
+        /* width: auto; */
+        /* justify-content: center; */
+    /* } */
+    /* .encabezado a{ */
+        /* font-size: 16px; */
+        /* width: auto; */
+        /* padding: 10px; */
+    /* } */
+    /* .navegador{ */
+        /* width: 100%; */
+/*         */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: space-evenly; */
+/*          */
+    /* } */
+    /* .navegador a{ */
+        /* font-size: 13px; */
+        /* width: auto; */
+    /* } */
+/*          */
+    /* .section{ */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* width: 100%; */
+        /* align-items: center; */
+/*  */
+    /* } */
+/*  */
+    /* .principal-1,.principal-2,.principal-3{ */
+        /* font-size: medium; */
+        /* justify-self: center; */
+        /* margin:2rem; */
+/*         */
+        /* width: 50%; */
+        /* text-align: center; */
+    /* } */
+       /* Aca usamos mediaquerys para ofertas
+    /* .principal-cruceros{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    /* } */
+    /* .card-Hotel{ */
+        /* width: 90%; */
+        /* height: 100%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 2rem; */
+    /* } */
+    /* .card-indihotel-1,.card-indihotel-2,.card-indihotel-3{ */
+        /* width: auto; */
+        /* height: fit-content; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* align-self: center; */
+        /* padding: 2rem; */
+    /* } */
+    /* .img-HV{ */
+        /* width: 320px; */
+        /* height: 250px; */
+    /* } */
+    /* .card-viajes{ */
+        /* display: flex; */
+        /* width: 70%; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    /* } */
+    /* .card-lugares{ */
+        /* width: auto; */
+        /* height: fit-content; */
+        /* padding-bottom: 2rem; */
+    /* } */
+    /*aca usamos mediasquerys en pag paquetes
+    /* .principal-paq{ */
+        /* display: flex; */
+        /* width: auto; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 1.5rem; */
+    /* } */
+    /* .paq-cruceros{ */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 1.5rem; */
+    /* } */
+    /* .card-paq-cruceros1,.card-paq-cruceros2,.card-paq-cruceros2{ */
+        /* width:85%; */
+    /* } */
+    /* .card-paq1,.card-paq2,.card-paq3,.card-paq4,.card-paq5,.card-paq6{ */
+        /* width: 85%; */
+    /* } */
+    /*ACA usamos mediaquerys en la pag cruceros
+    /* .cruceros-principal{ */
+        /* width: 100%; */
+        /* display:flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    /* } */
+    /* .card-cruceros{ */
+        /* width: 65%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 1.5rem; */
+    /* } */
+    /*Usan mediaquerys en pag nosotros
+    /* .principal-nos{ */
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    /* } */
+    /* .card-staff-1,.card-staff-2,.card-staff-3{ */
+        /* width: 75%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    /* } */
+/* } */
 
 
 
