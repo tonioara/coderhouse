@@ -836,6 +836,14 @@ footer{
         justify-content: center;
         align-items: center;
     }
+    .pag-paq h3,.paq-cruceros h3{
+        font-size: smaller;
+        font-weight: 300;
+    }
+    .pag-paq p,.paq-cruceros p{
+        font-size: medium;
+        font-weight: 300;
+    }
     .titulo-card-paq,.titulo-crucero-paq{
         font-size: smaller;
         font-weight: 300;
@@ -843,6 +851,7 @@ footer{
         height: 200px;
         padding: 1rem;
     }
+
     .principal-paq, .paq-cruceros{
         display: flex;
         flex-direction: column;
@@ -854,7 +863,6 @@ footer{
     .card-paq1,.card-paq2,.card-paq3,.card-paq4,.card-paq5,.card-paq6,.card-paq-cruceros1,.card-paq-cruceros2,.card-paq-cruceros3{
         width: 380px;
         text-align: center;
-
         border: 2px solid white;
         border-radius: 20px;
         box-shadow: 0px 0px 30px rgb(235, 222, 222, 0.8);
