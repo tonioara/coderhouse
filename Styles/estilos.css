@@ -76,6 +76,9 @@ body{
     
 
 }
+.navbar-brand{
+    margin-right: 0px;
+}
 .navegador-mio li{
     align-self: center;
     font-weight: bold;
@@ -700,6 +703,7 @@ footer{
     }*/
     .navbar-mio{
         display: flex;
+        width: min-content;
         align-items: center;
         justify-self: center;
         justify-content: center;
@@ -729,7 +733,7 @@ footer{
         align-self: center;
         font-weight:300;
         font-size: smaller;
-        gap: 5px;
+        margin: 0.2rem;
         padding: 0.5rem;
         align-items: center;
         justify-content: space-between;
