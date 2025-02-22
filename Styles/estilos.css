@@ -872,19 +872,45 @@ footer{
     }
     /*ACA usamos mediaquerys en la pag cruceros*/
     .cruceros-principal{
-        width: 100%;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0 auto;
         align-items: center;
     }
+    .titulo-cruceros h2{
+        font-size: medium;
+        font-weight: 600;
+    }
+    .titulo-cruceros p{
+        font-size: smaller;
+        font-weight: 300;
+    }
     .card-cruceros{
-        width: 90%;
+        width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+        gap: 0.5rem;
+    }
+    .card-individual{
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .card-individual h3{
+
+        font-size: large;
+        font-weight: 700;
+    }
+    .card-cruceros p{
+        font-size: smaller;
+        font-weight: 300;
     }
     /*Usan mediaquerys en pag nosotros*/
     .principal-nos{
