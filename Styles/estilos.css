@@ -656,7 +656,26 @@ footer{
     
     padding: 2rem;
 }
-
+.formulario-mio{
+    border: 2px solid white;
+    border-radius:20px ;
+    padding: 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    
+   
+}
+.btn-formularios{
+    background-color: black;
+    color: white;
+    margin-top:1rem;
+    padding: 5px;
+    font-size: medium;
+    font-weight: 400;
+    border: 1px solid white;
+}
 
 /**Trabajando con mediaquerys*/
 @media (max-width: 768px){
@@ -937,6 +956,24 @@ footer{
         align-items: center;
         gap: 0.5rem;
 
+    }
+    .formulario-mio{
+        border: 2px solid white;
+        border-radius:20px ;
+        padding: 1rem;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        font-size: small;
+        font-weight: 400;
+    }
+    .btn-formularios{
+        background-color: black;
+        color: white;
+        margin-top:1rem;
+        font-size: medium;
+        font-weight: 400;
     }
     /*medias en el footer*/
     .footer h3{
