@@ -599,7 +599,7 @@ footer{
 }
 /** estilos de pagina nosotros**/
 .principal-nos{
-    width: 100%;
+    width: 90%;
    
     display: grid;
     justify-content: space-evenly;
@@ -607,8 +607,8 @@ footer{
     grid-template-rows: 1fr 2fr;
     grid-template-areas: "titulo-nos titulo-nos titulo-nos "
                           "card-nos1 card-nos2 card-nos3";
-    margin: 3rem;
-    gap: 2rem;
+    margin: 0 auto;
+    gap: 1rem;
 
 }
 .titulo-nos{
