@@ -1,0 +1,500 @@
+$sombra: 0px 0px 30px rgb(248, 248, 248);
+$borde: 1px solid rgb(204, 170, 170);
+
+
+@mixin flex($direction,$justify,$aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+@mixin boder-shadow($boder,$raduis,$shadow){
+    border: $boder;
+    border-radius: $raduis;
+    box-shadow: $shadow;
+}
+@mixin medidas($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin mar-padd($marg,$padd){
+    margin: $marg;
+    padding: $padd;
+}
+$colors :(
+    black: black,
+    blanco: white,
+    blanquito: aliceblue,
+    crema: bisque,
+    marron:brown
+);
+$font-size: (
+    xs: 10px,
+    m:14px,
+    l:20px,
+    xl:30px
+);
+
+body{
+    background-color: black
+}
+header{
+    .navbar-mio{
+        @include flex(none,center,center );
+        @include boder-shadow($borde,25px, $sombra);
+        @include mar-padd(1rem,auto );
+        justify-self: center;
+    }
+    .nav-mio{
+        width:100%;
+        color: black;
+        margin-top: 2rem;
+
+        .navegador-mio{
+            @include flex(row,center,center );
+            @include boder-shadow($borde,20px, $sombra);
+            background-color: map-get($colors,crema );
+            list-style: none;
+            text-decoration: none;
+            li{
+                align-self: center;
+                font-weight: bold;
+                font-size: map-get($font-size, l );
+                @include mar-padd(1rem,0.5rem);
+                @include flex(row,space-between,center );
+                @include boder-shadow($borde, 20px, $sombra );
+            }
+            .pag-selec{
+                background-color:brown;
+                color: rgb(238, 229, 229);
+            }
+        }
+
+    }
+}
+
+main{
+    h1{
+        color: map-get($colors, blanco );
+        text-decoration: underline;
+        text-align: center;
+        @include mar-padd(4rem,0 );
+    }
+    .buscador-vuelos{
+        background-color: rgb(43, 43, 56);
+        @include flex(column,center ,center );
+        @include medidas(auto,50% );
+        justify-self: center;
+        @include mar-padd(2rem,4rem );
+        @include boder-shadow($borde,20px ,$sombra);
+        color: map-get($colors, blanco );
+         h2{
+            margin: 2rem;
+            justify-content: center;
+            text-align: center;
+            text-decoration: underline;
+            color: map-get($colors, blanco);
+         }
+         .card-vuelo{
+            ul{
+                list-style-type: none;
+                label{
+                    @include medidas(200px,20px );
+                    display: inline-block;
+                }
+                select{
+                    @extend label;
+                }
+                input{
+                    @extend label;
+                }
+            }
+         }
+         .btn-vuelo{
+            @include flex(row,center,center );
+            @include mar-padd(2rem,0.5rem );
+            @include boder-shadow($borde,20px ,none );
+            color:map-get($colors, blanquito );
+            background-color: map-get($colors, black);
+            justify-self: center;
+         }
+    }
+    .img-principal{
+        @include medidas(300px, 300px);
+    }
+    .section{
+        width: 100%;
+        @include flex(row,center ,none );
+        gap: 2rem;
+        .principal-1{
+            @include flex(column, center, center);
+            @include boder-shadow($borde, 20px ,$sombra );
+            @include mar-padd(2rem,2rem );
+            text-align: center;
+            font-size: map-get($font-size, l );
+            font-weight: 500;
+            color: map-get($colors, blanco )
+        }
+        .principal-2{
+            @extend .principal-1;
+        }
+        .principal-3{
+            @extend .principal-1;
+        }
+    }
+    
+    
+    }
+    .logo-fb{
+        @include medidas(40px,40px );
+    }
+    footer{
+        
+       
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: map-get($colors, blanco );
+        margin-top: 4rem;
+        gap: 2rem;
+        .footer-icono{
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+        }
+        .derechos{
+            margin-top: 2rem;
+        }
+       
+    }
+    //paginas cruceros//
+
+    .img-cruceros{
+        @include medidas(300px,300px );
+    }
+    .cruceros-principal{
+        @include flex(column,center ,center );
+        .titulo-cruceros{
+            @include flex(column,center , center);
+            color: map-get($colors, blanco );
+            font-size: map-get($font-size, xl );
+            font-weight: bolder;
+            text-align: center;
+        }
+        .card-cruceros{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            .card-individual{
+                @include boder-shadow($borde,20px ,$sombra );
+                @include mar-padd(30px,30px );
+                font-weight: bold;
+                margin-top: 2rem;
+                text-align: center;
+                color: map-get($colors, blanco );
+                p{
+                    margin: 1rem;
+                }
+            }
+
+        }
+    }
+    //pagina ofertas//
+    .img-HV{
+        @include medidas(250px,200px );
+        margin-top: 4rem;
+    }
+    main{
+        .titulo-ofertas{
+            @include flex(column,center , center);
+            color: map-get($colors, blanco );
+            font-size: map-get($font-size, xl );
+            font-weight: bolder;
+            text-align: center;
+        }
+        .card-Hotel{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: "card1 card1 "
+                                "card2 card2 " 
+                                 "card3 card3 ";
+            gap: 2rem;
+            margin-top: 3rem;
+            .card-indihotel-1{
+                color: map-get($colors, blanco );
+                font-size: large;
+                @include boder-shadow($borde,20px ,$sombra );
+                @include medidas(900px,500px );
+                text-align: center;
+                padding-top: 2rem;
+                grid-area: card1;
+                grid-column:1/3 ;
+                grid-row:1/3 ;
+            }
+            .card-indihotel-2{
+                @extend .card-indihotel-1;
+                grid-area: card2;
+                grid-column:2/4 ;
+                grid-row:2/4;
+            }
+            .card-indihotel-3{
+                @extend .card-indihotel-1;
+                grid-area: card3;
+                grid-column:1/3 ;
+                grid-row:3/3;
+            }
+
+        }
+        .card-viajes{
+            @include flex(row,space-evenly ,center );
+            @include boder-shadow($borde,20px ,$sombra );
+            margin-top: 5rem;
+            div{
+                @include flex(column,center ,center );
+                @include mar-padd(2rem,0.5rem );
+                @include medidas(370px,500px);
+                @include boder-shadow($borde,20px ,$sombra );
+                background-color: antiquewhite;
+                text-align: center;
+                h2{
+                    margin-top: 1.5rem;
+                }
+                p{
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    //pagina paquete//
+    .pag-paq{
+        .principal-paq{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            grid-template-areas: "titulo titulo titulo"
+                                 "miami cusco madrid"
+                                "barce bali australia";
+
+            .titulo-card-paq{
+                @include flex(column,center ,center );
+                @include mar-padd(3rem,2rem );
+                @include medidas(400px,fit-content );
+                @include boder-shadow($borde,20px ,$sombra );
+                text-align: center;
+                background-color: map-get($colors , crema );
+                color: map-get($colors, black);
+                grid-area: titulo;
+                grid-column: 2/3;
+            }
+            .card-paq1{
+                @include flex(column,center , center);
+                @include boder-shadow($borde,20px ,$sombra );
+                text-align: center;
+                padding: 2rem;
+                color: map-get($colors, blanco);
+                grid-area: miami;
+            }
+            .card-paq2{
+                @extend .card-paq1;
+                grid-area: cusco;
+            }
+            .card-paq3{
+                @extend .card-paq1;
+                grid-area: madrid;
+            }
+            .card-paq4{
+                @extend .card-paq1;
+                grid-area: barce;
+            }
+            .card-paq5{
+                @extend .card-paq1;
+                grid-area: bali;
+            }
+            .card-paq6{
+                @extend .card-paq1;
+                grid-area: australia;
+            }
+        }
+    }
+
+
+    .img-principal-alaska{
+        @include medidas(350px,350px );
+    }
+
+    .paq-cruceros{
+    
+        display: grid;
+        grid-template-areas: "titulo2 titulo2 titulo2"
+                              "larga2 miami2 alaska2";
+
+        justify-self: center;
+
+        .titulo-crucero-paq{
+            @include flex(column,center ,center );
+            @include medidas(400px,fit-content );
+            @include mar-padd(3rem,2rem );
+            @include boder-shadow($borde,20px ,$sombra );
+            background-color: map-get($colors, crema );
+            color: map-get($colors, black );
+            text-align: center;
+            grid-area: titulo2;
+            grid-column: 2/3;
+        }
+        .card-paq-cruceros1{
+            @include flex(column,center ,center );
+            @include boder-shadow($borde,20px ,$sombra );
+            @include medidas(400px,500px );
+            @include mar-padd(3rem,0.5rem );
+            text-align: center;
+            color: map-get($colors, blanco);
+            grid-area: larga2;
+        }
+        .card-paq-cruceros2{
+            @extend .card-paq-cruceros1;
+            grid-area: miami2;
+        }
+        .card-paq-cruceros3{
+            @extend .card-paq-cruceros1;
+            grid-area: alaska2;
+        }
+    }
+    //paginas nosotros//
+    .main-nosotros{
+        .principal-nos{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas: "titulo-nos titulo-nos titulo-nos "
+                                  "card-nos1 card-nos2 card-nos3";
+            justify-self: center;
+            margin-bottom: 4rem;
+        }
+        .titulo-nos{
+            @include boder-shadow($borde,20px ,$sombra );
+            @include medidas(300px,fit-content );
+            @include mar-padd(3rem,2rem );
+            text-align: center;
+            justify-self: center;
+            background-color: map-get($colors, black);
+            color:  map-get($colors, blanco);
+            grid-area: titulo-nos;
+        }
+        .card-staff-1{
+            @include flex(column,center , center);
+            @include boder-shadow($borde, 20px,$sombra );
+            @include mar-padd(0.5rem,2rem );
+            color:  map-get($colors, blanco);
+            width: 450px;
+            gap: 2rem;
+            text-align: center;
+            grid-area: card-nos1;
+        }
+        .card-staff-2{
+            @extend .card-staff-1;
+            grid-area: card-nos2;
+        }
+        .card-staff-3{
+            @extend .card-staff-1;
+            grid-area: card-nos3;
+        }
+        .formulario-mio{
+            h3{
+                text-align: center;
+                margin: 2rem;
+            }
+            margin-top: 2rem;
+            @include boder-shadow($borde,20px ,$sombra );
+            @include mar-padd(1rem,3rem );
+            @include medidas(450px, 350px);
+            @include flex(column, center, none);
+            color:  map-get($colors, blanco) ;
+            justify-self: center;
+            .btn-formularios{
+                @extend .btn-vuelo;
+            }
+        }
+    }
+    /*
+.formulario-mio{
+    border: 2px solid white;
+    border-radius:20px ;
+    padding: 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    
+   
+}
+.btn-formularios{
+    background-color: black;
+    color: white;
+    margin-top:1rem;
+    padding: 5px;
+    font-size: medium;
+    font-weight: 400;
+    border: 1px solid white;
+}*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
