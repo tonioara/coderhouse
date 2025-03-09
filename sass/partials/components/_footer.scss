@@ -1,0 +1,45 @@
+footer{
+    .logo-fb{
+        @include medidas(40px,40px );
+    }
+   
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: map-get($colors, blanco );
+    margin-top: 4rem;
+    gap: 2rem;
+    .footer-icono{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    }
+    .derechos{
+        margin-top: 2rem;
+    }
+    @include mobil{
+        h3,a{
+            font-size: map-get($font-size, m );
+        }
+        .derechos{
+            h4{
+                font-size: map-get($font-size, xs );
+            }
+        }
+    }
+    @include tablet{
+        h3,a{
+            font-size: map-get($font-size, l );
+        }
+        .derechos{
+            h4{
+                font-size: map-get($font-size, m );
+            }
+        }
+    }
+}

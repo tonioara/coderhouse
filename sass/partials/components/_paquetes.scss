@@ -1,0 +1,205 @@
+ //pagina paquete//
+ .pag-paq{
+    .principal-paq{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        grid-template-areas: "titulo titulo titulo"
+                             "miami cusco madrid"
+                            "barce bali australia";
+        .titulo-card-paq{
+            @include flex(column,center ,center );
+            @include mar-padd(1rem,2rem );
+            @include medidas(400px,fit-content );
+            @include boder-shadow($borde,20px ,$sombra );
+            text-align: center;
+            background-color: map-get($colors , crema );
+            color: map-get($colors, black);
+            
+            grid-area: titulo;
+            grid-column: 2/3;
+            
+            
+        }
+        .card-paq1{
+            @include flex(column,center , center);
+            @include boder-shadow($borde,20px ,$sombra );
+            text-align: center;
+            padding: 2rem;
+            color: map-get($colors, blanco);
+            grid-area: miami;
+        }
+        .card-paq2{
+            @extend .card-paq1;
+            grid-area: cusco;
+        }
+        .card-paq3{
+            @extend .card-paq1;
+            grid-area: madrid;
+        }
+        .card-paq4{
+            @extend .card-paq1;
+            grid-area: barce;
+        }
+        .card-paq5{
+            @extend .card-paq1;
+            grid-area: bali;
+        }
+        .card-paq6{
+            @extend .card-paq1;
+            grid-area: australia;
+        }
+      
+      
+      
+    }
+    .paq-cruceros{
+    
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "titulo2 titulo2 titulo2"
+                              "larga2 miami2 alaska2";
+        gap: 1rem;
+        justify-self: center;
+        .titulo-crucero-paq{
+            @include flex(column,center ,center );
+            @include medidas(400px,fit-content );
+            @include mar-padd(3rem,2rem );
+            @include boder-shadow($borde,20px ,$sombra );
+            background-color: map-get($colors, crema );
+            color: map-get($colors, black );
+            text-align: center;
+            grid-area: titulo2;
+            grid-column: 2/3;
+        }
+        img{
+            @include medidas(250px,250px );
+        }
+        .card-paq-cruceros1{
+            @include flex(column,center ,center );
+            @include boder-shadow($borde,20px ,$sombra );
+            @include medidas(350px,500px );
+            @include mar-padd(1.5rem,0.5rem );
+            text-align: center;
+            color: map-get($colors, blanco);
+            grid-area: larga2;
+        }
+        .card-paq-cruceros2{
+            @extend .card-paq-cruceros1;
+            grid-area: miami2;
+        }
+        .card-paq-cruceros3{
+            @extend .card-paq-cruceros1;
+            grid-area: alaska2;
+        }
+    }
+    @include mobil{
+      .principal-paq{
+        @include flex(column,center ,center );
+        .titulo-card-paq{
+            @include mar-padd(1rem,2rem );
+            @include medidas(200px,200px );
+            h1{
+                font-size: map-get($font-size, m );
+            }
+            p{
+                font-size: map-get($font-size, xs );
+            }
+        }
+        .card-paq1,.card-paq2,.card-paq3,.card-paq4,.card-paq5,.card-paq6{
+            @include medidas(350px,350px );
+            h3{
+                font-size: map-get($font-size, m );
+            }
+            p{
+                font-size: map-get($font-size, xs );
+            }
+            img{
+                @include medidas(180px,180px ); 
+            }
+        }
+      }
+      .paq-cruceros{
+        @include flex(column,center ,center );
+        .titulo-crucero-paq{
+            @include mar-padd(1rem,2rem );
+            @include medidas(200px,200px );
+            h3{
+                font-size: map-get($font-size, m );
+            }
+            p{
+                font-size: map-get($font-size, xs );
+            }
+
+        }
+        .card-paq-cruceros1,.card-paq-cruceros2,.card-paq-cruceros3{
+            @include medidas(350px,350px );
+            @include mar-padd(1.5rem,0.5rem );
+            h3{
+                font-size: map-get($font-size, m );
+            }
+            p{
+                font-size: map-get($font-size, xs );
+            }
+            img{
+                @include medidas(150px,150px ); 
+            }
+        }
+      }
+    }
+    @include tablet{
+        .principal-paq{
+          @include flex(column,center ,center );
+          .titulo-card-paq{
+              @include mar-padd(1rem,2rem );
+              @include medidas(300px,300px );
+              h1{
+                  font-size: map-get($font-size, l );
+                  margin: 0.5rem;
+              }
+              p{
+                  font-size: map-get($font-size, p );
+              }
+          }
+          .card-paq1,.card-paq2,.card-paq3,.card-paq4,.card-paq5,.card-paq6{
+              @include medidas(390px,390px );
+              h3{
+                  font-size: map-get($font-size, l );
+              }
+              p{
+                  font-size: map-get($font-size, m );
+              }
+              img{
+                  @include medidas(250px,250px ); 
+              }
+          }
+        }
+        .paq-cruceros{
+          @include flex(column,center ,center );
+          flex-wrap: wrap;
+          .titulo-crucero-paq{
+              @include mar-padd(1rem,2rem );
+              @include medidas(300px,200px );
+              h3{
+                  font-size: map-get($font-size, l );
+              }
+              p{
+                  font-size: map-get($font-size, m );
+              }
+          }
+          .card-paq-cruceros1,.card-paq-cruceros2,.card-paq-cruceros3{
+              @include medidas(300px,300px );
+              @include mar-padd(0.5rem,0.5rem );
+              h3{
+                  font-size: map-get($font-size, m );
+              }
+              p{
+                  font-size: map-get($font-size, m );
+              }
+              img{
+                  @include medidas(150px,150px ); 
+              }
+          }
+        }
+      }
+}

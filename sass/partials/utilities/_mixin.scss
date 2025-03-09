@@ -1,0 +1,34 @@
+@mixin flex($direction,$justify,$aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+@mixin boder-shadow($boder,$raduis,$shadow){
+    border: $boder;
+    border-radius: $raduis;
+    box-shadow: $shadow;
+}
+@mixin medidas($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+@mixin mar-padd($marg,$padd){
+    margin: $marg;
+    padding: $padd;
+}
+
+
+//MEDIA QUERYS//
+
+@mixin mobil{
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: 769px) and (max-width: 1024px){
+        @content;
+    }
+}

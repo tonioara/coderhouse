@@ -1,0 +1,117 @@
+
+  //paginas nosotros//
+  .main-nosotros{
+    .principal-nos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "titulo-nos titulo-nos titulo-nos "
+                              "card-nos1 card-nos2 card-nos3";
+        justify-self: center;
+        margin-bottom: 4rem;
+    }
+    .titulo-nos{
+        @include boder-shadow($borde,20px ,$sombra );
+        @include medidas(300px,fit-content );
+        @include mar-padd(3rem,2rem );
+        text-align: center;
+        justify-self: center;
+        background-color: map-get($colors, black);
+        color:  map-get($colors, blanco);
+        grid-area: titulo-nos;
+    }
+    .card-staff-1{
+        @include flex(column,center , center);
+        @include boder-shadow($borde, 20px,$sombra );
+        @include mar-padd(0.5rem,2rem );
+        color:  map-get($colors, blanco);
+        width: 325px;
+        gap: 2rem;
+        text-align: center;
+        grid-area: card-nos1;
+    }
+    .card-staff-2{
+        @extend .card-staff-1;
+        grid-area: card-nos2;
+    }
+    .card-staff-3{
+        @extend .card-staff-1;
+        grid-area: card-nos3;
+    }
+    .formulario-mio{
+        h3{
+            text-align: center;
+            margin: 2rem;
+        }
+        margin-top: 2rem;
+        @include boder-shadow($borde,20px ,$sombra );
+        @include mar-padd(1rem,3rem );
+        @include medidas(450px, 350px);
+        @include flex(column, center, none);
+        color:  map-get($colors, blanco) ;
+        justify-self: center;
+        .btn-formularios{
+            @extend .btn-vuelo;
+        }
+    }
+    @include mobil{
+        .principal-nos{
+            h2{
+                font-size: map-get($font-size , l );
+                font-weight: 800;
+            }
+            @include flex(column, center, center);
+            width: 400px;
+            margin: 0 auto;
+            h3,h5, p{
+                font-size: map-get($font-size, xs );
+                font-weight: 300;
+            }
+            .card-staff-1,.card-staff-2,.card-staff-3{
+                width: 320px;
+                gap: 0.5rem;
+            }
+
+        }
+        .formulario-mio{
+            @include mar-padd(1rem,2rem );
+            width: 320px;
+            font-size: small;
+            font-weight: 400;
+            .btn-vuelo{
+                font-size: small;
+                font-weight: 400;
+            }
+
+        }
+    }
+    @include tablet{
+        .principal-nos{
+            h2{
+                font-size: map-get($font-size , xl );
+                font-weight: 800;
+            }
+            @include flex(column, center, center);
+            width: 450px;
+            margin: 0 auto;
+            h3,h5, p{
+                font-size: map-get($font-size, m);
+                font-weight: 300;
+            }
+            .card-staff-1,.card-staff-2,.card-staff-3{
+                width: 400px;
+                gap: 1rem;
+            }
+        }
+        .formulario-mio{
+            @include mar-padd(1rem,2rem );
+            font-size:  map-get($font-size , m );
+            font-weight: 400;
+            .btn-vuelo{
+                font-size:  map-get($font-size , m );
+                font-weight: 400;
+            }
+        }
+    }
+
+}

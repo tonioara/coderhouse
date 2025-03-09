@@ -1,0 +1,144 @@
+ //pagina ofertas//
+ .img-HV{
+    @include medidas(250px,200px );
+    margin-top: 4rem;
+}
+.principal-cruceros{
+    .img-HV{
+        @include medidas(250px,200px );
+        margin-top: 4rem;
+     }
+    .titulo-ofertas{
+        @include flex(column,center , center);
+        color: map-get($colors, blanco );
+        font-size: map-get($font-size, xl );
+        font-weight: bolder;
+        text-align: center;
+    }
+    .card-Hotel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: "card1 card1 "
+                            "card2 card2 " 
+                             "card3 card3 ";
+        gap: 2rem;
+        margin-top: 3rem;
+        .card-indihotel-1{
+            color: map-get($colors, blanco );
+            font-size:map-get($font-size, xl );
+            @include medidas(800px,500px );
+            @include boder-shadow($borde,20px ,$sombra );
+            text-align: center;
+            padding-top: 2rem;
+            grid-area: card1;
+            grid-column:1/3 ;
+            grid-row:1/3 ;
+        }
+        .card-indihotel-2{
+            @extend .card-indihotel-1;
+            grid-area: card2;
+            grid-column:2/4 ;
+            grid-row:2/4;
+        }
+        .card-indihotel-3{
+            @extend .card-indihotel-1;
+            grid-area: card3;
+            grid-column:1/3 ;
+            grid-row:3/3;
+        }
+    }
+    .card-viajes{
+        @include flex(row,space-evenly ,center );
+        @include boder-shadow($borde,20px ,$sombra );
+        margin-top: 5rem;
+        div{
+            @include flex(column,center ,center );
+            @include mar-padd(2rem,0.5rem );
+            @include medidas(370px,500px);
+            @include boder-shadow($borde,20px ,$sombra );
+            background-color: antiquewhite;
+            text-align: center;
+            h2{
+                margin-top: 1.5rem;
+            }
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+    @include mobil{
+        .titulo-ofertas{
+            font-size: map-get($font-size, m );
+            font-weight: bolder;
+        }
+        .card-Hotel{
+            @include flex(column,center ,center );
+            flex-wrap: wrap;
+            .card-indihotel-1,.card-indihotel-2,.card-indihotel-3{
+                @include medidas(380px,300px );
+                font-size:map-get($font-size, m );
+                img{
+                    @include medidas(100px,100px);
+                }
+            }
+        }
+        .card-viajes{
+            @include flex(column,space-evenly ,center );
+            width: 400px;
+            justify-self: center;
+            div{
+                img{
+                    @include medidas(150px,150px);
+                    margin-top: 0.5rem;
+                }
+                @include mar-padd(0.5rem,0.2rem );
+                 @include medidas(320px,300px);
+                 h2{
+                    font-size: map-get($font-size, m );
+                    margin: 1rem;
+                 }
+                 p{
+                    font-size: map-get($font-size, xs );
+                 }
+            }
+        }
+    }
+    @include tablet{
+        .titulo-ofertas{
+            font-size: map-get($font-size, xl );
+            font-weight: bolder;
+        }
+        .card-Hotel{
+            @include flex(column,center ,center );
+            flex-wrap: wrap;
+           
+            .card-indihotel-1,.card-indihotel-2,.card-indihotel-3{
+                @include medidas(500px,400px );
+                font-size:map-get($font-size, l);
+                img{
+                    @include medidas(150px,200px);
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+        .card-viajes{
+            @include flex(row,space-evenly ,center );
+            div{
+                img{
+                    @include medidas(150px,150px);
+                    margin-top: 0.5rem;
+                }
+                @include mar-padd(0.5rem,0.2rem );
+                 @include medidas(310px,350px);
+                 h2{
+                    font-size: map-get($font-size, l );
+                    margin: 1rem;
+                 }
+                 p{
+                    font-size: map-get($font-size, m);
+                 }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+//paginas cruceros//
+
+
+
+.cruceros-principal{
+    .img-cruceros{
+        @include medidas(300px,300px );
+    }
+    @include flex(column,center ,center );
+    .titulo-cruceros{
+        @include flex(column,center , center);
+        color: map-get($colors, blanco );
+        font-size: map-get($font-size, xl );
+        font-weight: bolder;
+        text-align: center;
+    }
+    .card-cruceros{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        .card-individual{
+            
+            @include boder-shadow($borde,20px ,$sombra );
+            @include mar-padd(30px,30px );
+            font-weight: bold;
+            margin-top: 2rem;
+            text-align: center;
+            color: map-get($colors, blanco );
+            p{
+                margin: 1rem;
+            }
+        }
+    }
+    @include mobil{
+        .img-cruceros{
+            @include medidas(200px,200px );
+        }
+        .titulo-cruceros{
+            font-size: map-get($font-size, l );
+            font-weight:400;
+        }
+        .card-cruceros{
+            @include flex(column,center ,center );
+            .card-individual{
+                font-weight: 300;
+                h3{
+                    font-size: map-get($font-size, m);
+                }
+                p{
+                    font-size: map-get($font-size, xs);
+                }
+            }
+        }
+    }
+    @include tablet{
+        .img-cruceros{
+            @include medidas(300px,300px );
+        }
+        .titulo-cruceros{
+            font-size: map-get($font-size, xl );
+            font-weight:600;
+        }
+        .card-cruceros{
+            @include flex(column,center ,center );
+            flex-wrap: wrap;
+            .card-individual{
+                width: min-content;
+                height: max-content;
+                font-weight: 500;
+                h3{
+                    font-size: map-get($font-size, l);
+                }
+                p{
+                    font-size: map-get($font-size, m);
+                }
+            }
+        }
+    }
+}

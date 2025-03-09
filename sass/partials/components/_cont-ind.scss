@@ -1,0 +1,141 @@
+main{
+    .titulo-reseña{
+         h1{
+             color: map-get($colors, blanco );
+             text-decoration: underline;
+             text-align: center;
+             @include mar-padd(4rem,0 );
+             }
+    }
+    .buscador-vuelos{
+        background-color: rgb(43, 43, 56);
+        @include flex(column,center ,center );
+        @include medidas(auto,50% );
+        justify-self: center;
+        @include mar-padd(2rem,4rem );
+        @include boder-shadow($borde,20px ,$sombra);
+        color: map-get($colors, blanco );
+         h2{
+            margin: 2rem;
+            justify-content: center;
+            text-align: center;
+            text-decoration: underline;
+            color: map-get($colors, blanco);
+         }
+         .card-vuelo{
+            ul{
+                list-style-type: none;
+                label{
+                    @include medidas(200px,20px );
+                    display: inline-block;
+                }
+                select{
+                    @extend label;
+                }
+                input{
+                    @extend label;
+                }
+            }
+         }
+         .btn-vuelo{
+            @include flex(row,center,center );
+            @include mar-padd(2rem,0.5rem );
+            @include boder-shadow($borde,20px ,none );
+            color:map-get($colors, blanquito );
+            background-color: map-get($colors, black);
+            justify-self: center;
+         }
+    }
+    .img-principal{
+        @include medidas(300px, 300px);
+    }
+    .section{
+        width: 100%;
+        @include flex(row,center ,none );
+        gap: 2rem;
+        .principal-1{
+            @include flex(column, center, center);
+            @include boder-shadow($borde, 20px ,$sombra );
+            @include mar-padd(2rem,2rem );
+            text-align: center;
+            font-size: map-get($font-size, xl );
+            font-weight: 500;
+            color: map-get($colors, blanco )
+        }
+        .principal-2{
+            @extend .principal-1;
+        }
+        .principal-3{
+            @extend .principal-1;
+        }
+    }
+
+
+    @include mobil{
+        h1{
+            font-size: map-get($font-size, l );
+        }
+        .buscador-vuelos{
+            @include medidas(350px,350px);
+            @include mar-padd(1rem,2rem );
+            h2{
+                font-size: map-get($font-size, m );
+            }
+            .card-vuelo{
+                ul{
+                    li{
+                        font-size: map-get($font-size, m );
+                    }
+                }
+            }
+            .btn-vuelo{
+                @include mar-padd(2rem,0.5rem );
+            }
+        }
+        .img-principal{
+            @include medidas(200px, 200px);
+        }
+        .section{
+            @include flex(column,center ,center);
+            .principal-1,.principal-2,.principal-3{
+                @include mar-padd(1rem,1rem );
+                font-size: map-get($font-size, m );
+
+            }
+        }
+
+    }
+    @include tablet{
+        h1{
+            font-size: map-get($font-size, xl );
+        }
+        .buscador-vuelos{
+            @include medidas(450px,450px);
+            @include mar-padd(1.5rem,3rem );
+            h2{
+                font-size: map-get($font-size, l );
+            }
+            .card-vuelo{
+                ul{
+                    li{
+                        font-size: map-get($font-size, m );
+                    }
+                }
+            }
+            .btn-vuelo{
+                @include mar-padd(2rem,0.5rem );
+            }
+        }
+        .img-principal{
+            @include medidas(300px, 300px);
+        }
+        .section{
+            @include flex(column,center ,center);
+            flex-wrap: wrap;
+            .principal-1,.principal-2,.principal-3{
+                @include mar-padd(2rem,2rem );
+                font-size: map-get($font-size, l );
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+header{
+    .navbar-mio{
+        @include flex(none,center,center );
+        @include boder-shadow($borde,25px, $sombra);
+        @include mar-padd(1rem,auto );
+        justify-self: center;
+    }
+    .nav-mio{
+        width:100%;
+        color: black;
+        margin-top: 2rem;
+
+        .navegador-mio{
+            @include flex(row,center,center );
+            @include boder-shadow($borde,20px, $sombra);
+            background-color: map-get($colors,crema );
+            list-style: none;
+            text-decoration: none;
+            li{
+                align-self: center;
+                font-weight: bold;
+                font-size: map-get($font-size, xl );
+                @include mar-padd(1rem,0.5rem);
+                @include flex(row,space-between,center );
+                @include boder-shadow($borde, 20px, $sombra );
+
+                @include mobil{
+                    font-weight:300;
+                    font-size: map-get($font-size, m );
+                    @include mar-padd(0.2rem,0.4rem);
+                }
+                @include tablet{
+                    font-weight:500;
+                    font-size: map-get($font-size, l );
+                    @include mar-padd(0.8rem,0.5rem);
+                }
+            }
+            .pag-selec{
+                background-color:brown;
+                color: rgb(238, 229, 229);
+            }
+        }
+
+    }
+}
