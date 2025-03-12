@@ -60,13 +60,24 @@ main{
             text-align: center;
             font-size: map-get($font-size, xl );
             font-weight: 500;
-            color: map-get($colors, blanco )
+            color: map-get($colors, blanco );
+            /*transiciones*/
+            transition: transform 0.2s ease-in;
         }
         .principal-2{
             @extend .principal-1;
         }
         .principal-3{
             @extend .principal-1;
+        }
+        .principal-1:hover{
+            transform: scale(0.9);
+        }
+        .principal-2:hover{
+            transform: scale(0.9);
+        }
+        .principal-3:hover{
+            transform: scale(0.9);
         }
     }
 

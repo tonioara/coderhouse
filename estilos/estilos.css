@@ -156,6 +156,17 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   font-size: 24px;
   font-weight: 500;
   color: white;
+  /*transiciones*/
+  transition: transform 0.2s ease-in;
+}
+main .section .principal-1:hover, main .section .principal-2:hover, main .section .principal-3:hover {
+  transform: scale(0.9);
+}
+main .section .principal-2:hover {
+  transform: scale(0.9);
+}
+main .section .principal-3:hover {
+  transform: scale(0.9);
 }
 @media (max-width: 768px) {
   main h1 {
