@@ -60,10 +60,11 @@
             background-color: antiquewhite;
             text-align: center;
             h2{
-                margin-top: 1.5rem;
+                
+                font-size: map-get($font-size, l );
             }
             p{
-                margin-top: 1rem;
+                font-size: map-get($font-size, m );
             }
         }
     }
