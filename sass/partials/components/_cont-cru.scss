@@ -27,9 +27,14 @@
             margin-top: 2rem;
             text-align: center;
             color: map-get($colors, blanco );
+            /*transiciones*/
+            transition: transform 0.2s ease-in;
             p{
                 margin: 1rem;
             }
+        }
+        .card-individual:hover{
+            transform: scale(1.1);
         }
     }
     @include mobil{

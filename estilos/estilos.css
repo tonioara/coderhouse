@@ -334,7 +334,7 @@ main .section .principal-3:hover {
   margin: 0.5rem;
 }
 .principal-cruceros .card-viajes div:hover {
-  transform: scale(1.5s);
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .principal-cruceros .titulo-ofertas {
@@ -711,9 +711,14 @@ main .section .principal-3:hover {
   margin-top: 2rem;
   text-align: center;
   color: white;
+  /*transiciones*/
+  transition: transform 0.2s ease-in;
 }
 .cruceros-principal .card-cruceros .card-individual p {
   margin: 1rem;
+}
+.cruceros-principal .card-cruceros .card-individual:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .cruceros-principal .img-cruceros {
