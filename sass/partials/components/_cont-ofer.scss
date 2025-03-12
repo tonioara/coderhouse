@@ -67,7 +67,10 @@
                 font-size: map-get($font-size, l );
             }
             p{
-                font-size: map-get($font-size, m );
+                font-size: map-get($font-size, l);
+            }
+            img{
+                margin: 0.5rem;
             }
         }
     }

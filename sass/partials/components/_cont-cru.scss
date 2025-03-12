@@ -4,9 +4,10 @@
 
 .cruceros-principal{
     .img-cruceros{
-        @include medidas(300px,300px );
+        @include medidas(250px,250px );
     }
     @include flex(column,center ,center );
+    margin: 0 auto;
     .titulo-cruceros{
         @include flex(column,center , center);
         color: map-get($colors, blanco );
@@ -16,8 +17,8 @@
     }
     .card-cruceros{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 20px;
+        grid-template-columns: repeat(3,380px);
+        gap: 1rem;
         .card-individual{
             
             @include boder-shadow($borde,20px ,$sombra );

@@ -2,11 +2,12 @@
  .pag-paq{
     .principal-paq{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,380px);
         gap: 2rem;
         grid-template-areas: "titulo titulo titulo"
                              "miami cusco madrid"
                             "barce bali australia";
+        justify-self: center;
         .titulo-card-paq{
             @include flex(column,center ,center );
             @include mar-padd(1rem,2rem );
@@ -15,7 +16,7 @@
             text-align: center;
             background-color: map-get($colors , crema );
             color: map-get($colors, black);
-            
+            justify-self: center;
             grid-area: titulo;
             grid-column: 2/3;
             
@@ -24,6 +25,7 @@
         .card-paq1{
             @include flex(column,center , center);
             @include boder-shadow($borde,20px ,$sombra );
+            @include medidas(400px,480px );
             text-align: center;
             padding: 2rem;
             color: map-get($colors, blanco);
@@ -56,7 +58,7 @@
     .paq-cruceros{
     
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,380px);
         grid-template-areas: "titulo2 titulo2 titulo2"
                               "larga2 miami2 alaska2";
         gap: 1rem;
@@ -78,7 +80,7 @@
         .card-paq-cruceros1{
             @include flex(column,center ,center );
             @include boder-shadow($borde,20px ,$sombra );
-            @include medidas(350px,500px );
+            @include medidas(90%,500px );
             @include mar-padd(1.5rem,0.5rem );
             text-align: center;
             color: map-get($colors, blanco);

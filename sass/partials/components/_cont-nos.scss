@@ -8,11 +8,12 @@
         grid-template-areas: "titulo-nos titulo-nos titulo-nos "
                               "card-nos1 card-nos2 card-nos3";
         justify-self: center;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
+        gap: 3rem
     }
     .titulo-nos{
         @include boder-shadow($borde,20px ,$sombra );
-        @include medidas(300px,fit-content );
+        @include medidas(350px,fit-content );
         @include mar-padd(3rem,2rem );
         text-align: center;
         justify-self: center;
@@ -25,8 +26,8 @@
         @include boder-shadow($borde, 20px,$sombra );
         @include mar-padd(0.5rem,2rem );
         color:  map-get($colors, blanco);
-        width: 325px;
-        gap: 2rem;
+        width: 350px;
+        gap: 1rem;
         text-align: center;
         grid-area: card-nos1;
     }

@@ -311,7 +311,10 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   font-size: 18px;
 }
 .principal-cruceros .card-viajes div p {
-  font-size: 12px;
+  font-size: 18px;
+}
+.principal-cruceros .card-viajes div img {
+  margin: 0.5rem;
 }
 @media (max-width: 768px) {
   .principal-cruceros .titulo-ofertas {
@@ -411,9 +414,10 @@ main .section .principal-1, main .section .principal-3, main .section .principal
 
 .pag-paq .principal-paq {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 380px);
   gap: 2rem;
   grid-template-areas: "titulo titulo titulo" "miami cusco madrid" "barce bali australia";
+  justify-self: center;
 }
 .pag-paq .principal-paq .titulo-card-paq {
   display: flex;
@@ -430,6 +434,7 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   text-align: center;
   background-color: bisque;
   color: black;
+  justify-self: center;
   grid-area: titulo;
   grid-column: 2/3;
 }
@@ -441,6 +446,8 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   border: 1px solid rgb(204, 170, 170);
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgb(248, 248, 248);
+  width: 400px;
+  height: 480px;
   text-align: center;
   padding: 2rem;
   color: white;
@@ -463,7 +470,7 @@ main .section .principal-1, main .section .principal-3, main .section .principal
 }
 .pag-paq .paq-cruceros {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 380px);
   grid-template-areas: "titulo2 titulo2 titulo2" "larga2 miami2 alaska2";
   gap: 1rem;
   justify-self: center;
@@ -498,7 +505,7 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   border: 1px solid rgb(204, 170, 170);
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgb(248, 248, 248);
-  width: 350px;
+  width: 90%;
   height: 500px;
   margin: 1.5rem;
   padding: 0.5rem;
@@ -653,10 +660,11 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .cruceros-principal .img-cruceros {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 .cruceros-principal .titulo-cruceros {
   display: flex;
@@ -670,8 +678,8 @@ main .section .principal-1, main .section .principal-3, main .section .principal
 }
 .cruceros-principal .card-cruceros {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 380px);
+  gap: 1rem;
 }
 .cruceros-principal .card-cruceros .card-individual {
   border: 1px solid rgb(204, 170, 170);
@@ -747,13 +755,14 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   grid-template-rows: 1fr 2fr;
   grid-template-areas: "titulo-nos titulo-nos titulo-nos " "card-nos1 card-nos2 card-nos3";
   justify-self: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  gap: 3rem;
 }
 .main-nosotros .titulo-nos {
   border: 1px solid rgb(204, 170, 170);
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgb(248, 248, 248);
-  width: 300px;
+  width: 350px;
   height: fit-content;
   margin: 3rem;
   padding: 2rem;
@@ -774,8 +783,8 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   margin: 0.5rem;
   padding: 2rem;
   color: white;
-  width: 325px;
-  gap: 2rem;
+  width: 350px;
+  gap: 1rem;
   text-align: center;
   grid-area: card-nos1;
 }
