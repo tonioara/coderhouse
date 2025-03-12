@@ -30,26 +30,46 @@
             padding: 2rem;
             color: map-get($colors, blanco);
             grid-area: miami;
+            /*transiciones*/
+            transition: transform 0.2s ease-in;
+        }
+        .card-paq1:hover{
+            transform: scale(0.9);
         }
         .card-paq2{
             @extend .card-paq1;
             grid-area: cusco;
         }
+        .card-paq2:hover{
+            transform: scale(0.9);
+        }
         .card-paq3{
             @extend .card-paq1;
             grid-area: madrid;
+        }
+        .card-paq3:hover{
+            transform: scale(0.9);
         }
         .card-paq4{
             @extend .card-paq1;
             grid-area: barce;
         }
+        .card-paq4:hover{
+            transform: scale(0.9);
+        }
         .card-paq5{
             @extend .card-paq1;
             grid-area: bali;
         }
+        .card-paq5:hover{
+            transform: scale(0.9);
+        }
         .card-paq6{
             @extend .card-paq1;
             grid-area: australia;
+        }
+        .card-paq6:hover{
+            transform: scale(0.9);
         }
       
       
@@ -85,14 +105,25 @@
             text-align: center;
             color: map-get($colors, blanco);
             grid-area: larga2;
+            /*transiciones*/
+            transition: transform 0.2s ease-in;
+        }
+        .card-paq-cruceros1:hover{
+            transform: scale(1.1);
         }
         .card-paq-cruceros2{
             @extend .card-paq-cruceros1;
             grid-area: miami2;
         }
+        .card-paq-cruceros2:hover{
+            transform: scale(1.1);
+        }
         .card-paq-cruceros3{
             @extend .card-paq-cruceros1;
             grid-area: alaska2;
+        }
+        .card-paq-cruceros3:hover{
+            transform: scale(1.1);
         }
     }
     @include mobil{

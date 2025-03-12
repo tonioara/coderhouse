@@ -30,6 +30,8 @@
         gap: 1rem;
         text-align: center;
         grid-area: card-nos1;
+        /*transiciones*/
+        transition: transform 0.2s ease-in;
     }
     .card-staff-2{
         @extend .card-staff-1;
@@ -38,6 +40,15 @@
     .card-staff-3{
         @extend .card-staff-1;
         grid-area: card-nos3;
+    }
+    .card-staff-1:hover{
+        transform: scale(1.1);
+    }
+    .card-staff-2:hover{
+        transform: scale(1.1);
+    }
+    .card-staff-3:hover{
+        transform: scale(1.1);
     }
     .formulario-mio{
         h3{

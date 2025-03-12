@@ -472,21 +472,41 @@ main .section .principal-3:hover {
   padding: 2rem;
   color: white;
   grid-area: miami;
+  /*transiciones*/
+  transition: transform 0.2s ease-in;
+}
+.pag-paq .principal-paq .card-paq1:hover, .pag-paq .principal-paq .card-paq6:hover, .pag-paq .principal-paq .card-paq5:hover, .pag-paq .principal-paq .card-paq4:hover, .pag-paq .principal-paq .card-paq3:hover, .pag-paq .principal-paq .card-paq2:hover {
+  transform: scale(0.9);
 }
 .pag-paq .principal-paq .card-paq2 {
   grid-area: cusco;
 }
+.pag-paq .principal-paq .card-paq2:hover {
+  transform: scale(0.9);
+}
 .pag-paq .principal-paq .card-paq3 {
   grid-area: madrid;
+}
+.pag-paq .principal-paq .card-paq3:hover {
+  transform: scale(0.9);
 }
 .pag-paq .principal-paq .card-paq4 {
   grid-area: barce;
 }
+.pag-paq .principal-paq .card-paq4:hover {
+  transform: scale(0.9);
+}
 .pag-paq .principal-paq .card-paq5 {
   grid-area: bali;
 }
+.pag-paq .principal-paq .card-paq5:hover {
+  transform: scale(0.9);
+}
 .pag-paq .principal-paq .card-paq6 {
   grid-area: australia;
+}
+.pag-paq .principal-paq .card-paq6:hover {
+  transform: scale(0.9);
 }
 .pag-paq .paq-cruceros {
   display: grid;
@@ -532,12 +552,23 @@ main .section .principal-3:hover {
   text-align: center;
   color: white;
   grid-area: larga2;
+  /*transiciones*/
+  transition: transform 0.2s ease-in;
+}
+.pag-paq .paq-cruceros .card-paq-cruceros1:hover, .pag-paq .paq-cruceros .card-paq-cruceros3:hover, .pag-paq .paq-cruceros .card-paq-cruceros2:hover {
+  transform: scale(1.1);
 }
 .pag-paq .paq-cruceros .card-paq-cruceros2 {
   grid-area: miami2;
 }
+.pag-paq .paq-cruceros .card-paq-cruceros2:hover {
+  transform: scale(1.1);
+}
 .pag-paq .paq-cruceros .card-paq-cruceros3 {
   grid-area: alaska2;
+}
+.pag-paq .paq-cruceros .card-paq-cruceros3:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 768px) {
   .pag-paq .principal-paq {
@@ -812,12 +843,23 @@ main .section .principal-3:hover {
   gap: 1rem;
   text-align: center;
   grid-area: card-nos1;
+  /*transiciones*/
+  transition: transform 0.2s ease-in;
 }
 .main-nosotros .card-staff-2 {
   grid-area: card-nos2;
 }
 .main-nosotros .card-staff-3 {
   grid-area: card-nos3;
+}
+.main-nosotros .card-staff-1:hover, .main-nosotros .card-staff-2:hover, .main-nosotros .card-staff-3:hover {
+  transform: scale(1.1);
+}
+.main-nosotros .card-staff-2:hover {
+  transform: scale(1.1);
+}
+.main-nosotros .card-staff-3:hover {
+  transform: scale(1.1);
 }
 .main-nosotros .formulario-mio {
   margin-top: 2rem;
