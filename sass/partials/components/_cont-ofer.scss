@@ -5,7 +5,7 @@
 }
 .principal-cruceros{
     .img-HV{
-        @include medidas(250px,200px );
+        @include medidas(200px,200px );
         margin-top: 4rem;
      }
     .titulo-ofertas{
@@ -24,10 +24,11 @@
                              "card3 card3 ";
         gap: 2rem;
         margin-top: 3rem;
+        justify-self: center;
         .card-indihotel-1{
             color: map-get($colors, blanco );
             font-size:map-get($font-size, xl );
-            @include medidas(800px,500px );
+            @include medidas(700px,500px );
             @include boder-shadow($borde,20px ,$sombra );
             text-align: center;
             padding-top: 2rem;
@@ -50,6 +51,8 @@
     }
     .card-viajes{
         @include flex(row,space-evenly ,center );
+        width: 90%;
+        justify-self: center;
         @include boder-shadow($borde,20px ,$sombra );
         margin-top: 5rem;
         div{

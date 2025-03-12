@@ -233,7 +233,7 @@ main .section .principal-1, main .section .principal-3, main .section .principal
 }
 
 .principal-cruceros .img-HV {
-  width: 250px;
+  width: 200px;
   height: 200px;
   margin-top: 4rem;
 }
@@ -254,11 +254,12 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   grid-template-areas: "card1 card1 " "card2 card2 " "card3 card3 ";
   gap: 2rem;
   margin-top: 3rem;
+  justify-self: center;
 }
 .principal-cruceros .card-Hotel .card-indihotel-1, .principal-cruceros .card-Hotel .card-indihotel-3, .principal-cruceros .card-Hotel .card-indihotel-2 {
   color: white;
   font-size: 24px;
-  width: 800px;
+  width: 700px;
   height: 500px;
   border: 1px solid rgb(204, 170, 170);
   border-radius: 20px;
@@ -284,6 +285,8 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: 90%;
+  justify-self: center;
   border: 1px solid rgb(204, 170, 170);
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgb(248, 248, 248);
@@ -305,10 +308,10 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   text-align: center;
 }
 .principal-cruceros .card-viajes div h2 {
-  margin-top: 1.5rem;
+  font-size: 18px;
 }
 .principal-cruceros .card-viajes div p {
-  margin-top: 1rem;
+  font-size: 12px;
 }
 @media (max-width: 768px) {
   .principal-cruceros .titulo-ofertas {
@@ -618,7 +621,7 @@ main .section .principal-1, main .section .principal-3, main .section .principal
   .pag-paq .paq-cruceros .titulo-crucero-paq {
     margin: 1rem;
     padding: 2rem;
-    width: 200px;
+    width: 300px;
     height: 200px;
   }
   .pag-paq .paq-cruceros .titulo-crucero-paq h3 {
@@ -634,7 +637,7 @@ main .section .principal-1, main .section .principal-3, main .section .principal
     padding: 0.5rem;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 h3, .pag-paq .paq-cruceros .card-paq-cruceros2 h3, .pag-paq .paq-cruceros .card-paq-cruceros3 h3 {
-    font-size: 18px;
+    font-size: 12px;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 p, .pag-paq .paq-cruceros .card-paq-cruceros2 p, .pag-paq .paq-cruceros .card-paq-cruceros3 p {
     font-size: 12px;
@@ -658,7 +661,7 @@ main .section .principal-1, main .section .principal-3, main .section .principal
 .cruceros-principal .titulo-cruceros {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: white;
   font-size: 24px;
