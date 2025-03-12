@@ -23,6 +23,8 @@ header{
                 @include mar-padd(1rem,0.5rem);
                 @include flex(row,space-between,center );
                 @include boder-shadow($borde, 20px, $sombra );
+                /*transiciones*/
+                transition: transform 0.2s ease-in;
 
                 @include mobil{
                     font-weight:300;
@@ -34,6 +36,9 @@ header{
                     font-size: map-get($font-size, l );
                     @include mar-padd(0.8rem,0.5rem);
                 }
+            }
+            li:hover{
+                transform: scale(1.2);
             }
             .pag-selec{
                 background-color:brown;

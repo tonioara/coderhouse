@@ -35,6 +35,7 @@
             grid-area: card1;
             grid-column:1/3 ;
             grid-row:1/3 ;
+        
         }
         .card-indihotel-2{
             @extend .card-indihotel-1;
@@ -62,6 +63,7 @@
             @include boder-shadow($borde,20px ,$sombra );
             background-color: antiquewhite;
             text-align: center;
+            transition: transform 0.3s ease-in;
             h2{
                 
                 font-size: map-get($font-size, l );
@@ -72,6 +74,9 @@
             img{
                 margin: 0.5rem;
             }
+        }
+        div:hover{
+            transform: scale(1.5s);
         }
     }
     @include mobil{
