@@ -12,7 +12,7 @@ main{
         @include flex(column,center ,center );
         @include medidas(auto,50% );
         justify-self: center;
-        @include mar-padd(2rem,4rem );
+        @include mar-padd(3rem,2rem );
         @include boder-shadow($borde,20px ,$sombra);
         color: map-get($colors, blanco );
          h2{
@@ -26,7 +26,7 @@ main{
             ul{
                 list-style-type: none;
                 label{
-                    @include medidas(200px,20px );
+                    @include medidas(200px,30px );
                     display: inline-block;
                 }
                 select{
@@ -87,8 +87,8 @@ main{
             font-size: map-get($font-size, l );
         }
         .buscador-vuelos{
-            @include medidas(350px,350px);
-            @include mar-padd(1rem,2rem );
+           /* @include medidas(380px,400px);
+            @include mar-padd(1rem,2rem );*/
             h2{
                 font-size: map-get($font-size, m );
             }

@@ -4,8 +4,35 @@ header{
         @include boder-shadow($borde,25px, $sombra);
         @include mar-padd(1rem,auto );
         justify-self: center;
+        a{
+            margin: 0 auto;
+        }
     }
     .nav-mio{
+        background-color: map-get($colors,crema );
+        @include boder-shadow($borde,20px, $sombra);
+        .navegador-mio{
+            justify-content: center;
+            a{
+                align-self: center;
+                font-weight: bold;
+                font-size: map-get($font-size, xl );
+                @include mar-padd(1rem,0.5rem);
+                @include flex(row,space-between,center );
+                @include boder-shadow($borde, 20px, $sombra );
+                /*transiciones*/
+                transition: transform 0.2s ease-in; 
+            }
+            a:hover{
+                transform: scale(1.2);
+            }
+            .pag-selec{
+                background-color:brown;
+                color: rgb(238, 229, 229);
+            }
+        }
+    }
+    /*.nav-mio{
         width:100%;
         color: black;
         margin-top: 2rem;
@@ -23,7 +50,7 @@ header{
                 @include mar-padd(1rem,0.5rem);
                 @include flex(row,space-between,center );
                 @include boder-shadow($borde, 20px, $sombra );
-                /*transiciones*/
+                /*transiciones
                 transition: transform 0.2s ease-in;
 
                 @include mobil{
@@ -46,5 +73,5 @@ header{
             }
         }
 
-    }
+    }*/
 }
