@@ -88,7 +88,7 @@
             @include flex(column,center ,center );
             flex-wrap: wrap;
             .card-indihotel-1,.card-indihotel-2,.card-indihotel-3{
-                @include medidas(380px,300px );
+                @include medidas(380px,400px );
                 font-size:map-get($font-size, m );
                 img{
                     @include medidas(100px,100px);
