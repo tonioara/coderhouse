@@ -64,6 +64,10 @@
         justify-self: center;
         .btn-formularios{
             @extend .btn-vuelo;
+            @include boder-shadow($borde,20px ,$sombra );
+            @include mar-padd(0.5rem,0.5rem );
+            justify-self: center;
+
         }
     }
     @include mobil{

@@ -117,8 +117,8 @@ main .buscador-vuelos {
   width: auto;
   height: 50%;
   justify-self: center;
-  margin: 2rem;
-  padding: 4rem;
+  margin: 3rem;
+  padding: 2rem;
   border: 1px solid rgb(204, 170, 170);
   border-radius: 20px;
   box-shadow: 0px 0px 30px rgb(248, 248, 248);
@@ -136,7 +136,7 @@ main .buscador-vuelos .card-vuelo ul {
 }
 main .buscador-vuelos .card-vuelo ul label, main .buscador-vuelos .card-vuelo ul input, main .buscador-vuelos .card-vuelo ul select {
   width: 200px;
-  height: 20px;
+  height: 30px;
   display: inline-block;
 }
 main .buscador-vuelos .btn-vuelo, main .buscador-vuelos .main-nosotros .formulario-mio .btn-formularios, .main-nosotros .formulario-mio main .buscador-vuelos .btn-formularios {
@@ -196,16 +196,14 @@ main .section .principal-3:hover {
     font-size: 18px;
   }
   main .buscador-vuelos {
-    width: 350px;
-    height: 350px;
-    margin: 1rem;
-    padding: 2rem;
+    /* @include medidas(380px,400px);
+     @include mar-padd(1rem,2rem );*/
   }
   main .buscador-vuelos h2 {
-    font-size: 12px;
+    font-size: 16px;
   }
   main .buscador-vuelos .card-vuelo ul li {
-    font-size: 12px;
+    font-size: 16px;
   }
   main .buscador-vuelos .btn-vuelo, main .buscador-vuelos .main-nosotros .formulario-mio .btn-formularios, .main-nosotros .formulario-mio main .buscador-vuelos .btn-formularios {
     margin: 2rem;
@@ -224,7 +222,7 @@ main .section .principal-3:hover {
   main .section .principal-1, main .section .principal-2, main .section .principal-3, main .section .principal-2, main .section .principal-3 {
     margin: 1rem;
     padding: 1rem;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -241,7 +239,7 @@ main .section .principal-3:hover {
     font-size: 18px;
   }
   main .buscador-vuelos .card-vuelo ul li {
-    font-size: 12px;
+    font-size: 16px;
   }
   main .buscador-vuelos .btn-vuelo, main .buscador-vuelos .main-nosotros .formulario-mio .btn-formularios, .main-nosotros .formulario-mio main .buscador-vuelos .btn-formularios {
     margin: 2rem;
@@ -361,7 +359,7 @@ main .section .principal-3:hover {
 }
 @media (max-width: 768px) {
   .principal-cruceros .titulo-ofertas {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bolder;
   }
   .principal-cruceros .card-Hotel {
@@ -374,7 +372,7 @@ main .section .principal-3:hover {
   .principal-cruceros .card-Hotel .card-indihotel-1, .principal-cruceros .card-Hotel .card-indihotel-2, .principal-cruceros .card-Hotel .card-indihotel-3 {
     width: 380px;
     height: 300px;
-    font-size: 12px;
+    font-size: 16px;
   }
   .principal-cruceros .card-Hotel .card-indihotel-1 img, .principal-cruceros .card-Hotel .card-indihotel-2 img, .principal-cruceros .card-Hotel .card-indihotel-3 img {
     width: 100px;
@@ -400,11 +398,11 @@ main .section .principal-3:hover {
     margin-top: 0.5rem;
   }
   .principal-cruceros .card-viajes div h2 {
-    font-size: 12px;
+    font-size: 16px;
     margin: 1rem;
   }
   .principal-cruceros .card-viajes div p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -451,7 +449,7 @@ main .section .principal-3:hover {
     margin: 1rem;
   }
   .principal-cruceros .card-viajes div p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -555,6 +553,7 @@ main .section .principal-3:hover {
   text-align: center;
   grid-area: titulo2;
   grid-column: 2/3;
+  justify-self: center;
 }
 .pag-paq .paq-cruceros img {
   width: 250px;
@@ -607,20 +606,20 @@ main .section .principal-3:hover {
     height: 200px;
   }
   .pag-paq .principal-paq .titulo-card-paq h1 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .principal-paq .titulo-card-paq p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .pag-paq .principal-paq .card-paq1, .pag-paq .principal-paq .card-paq2, .pag-paq .principal-paq .card-paq3, .pag-paq .principal-paq .card-paq4, .pag-paq .principal-paq .card-paq5, .pag-paq .principal-paq .card-paq6 {
     width: 350px;
     height: 350px;
   }
   .pag-paq .principal-paq .card-paq1 h3, .pag-paq .principal-paq .card-paq2 h3, .pag-paq .principal-paq .card-paq3 h3, .pag-paq .principal-paq .card-paq4 h3, .pag-paq .principal-paq .card-paq5 h3, .pag-paq .principal-paq .card-paq6 h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .principal-paq .card-paq1 p, .pag-paq .principal-paq .card-paq2 p, .pag-paq .principal-paq .card-paq3 p, .pag-paq .principal-paq .card-paq4 p, .pag-paq .principal-paq .card-paq5 p, .pag-paq .principal-paq .card-paq6 p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .pag-paq .principal-paq .card-paq1 img, .pag-paq .principal-paq .card-paq2 img, .pag-paq .principal-paq .card-paq3 img, .pag-paq .principal-paq .card-paq4 img, .pag-paq .principal-paq .card-paq5 img, .pag-paq .principal-paq .card-paq6 img {
     width: 180px;
@@ -639,10 +638,10 @@ main .section .principal-3:hover {
     height: 200px;
   }
   .pag-paq .paq-cruceros .titulo-crucero-paq h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .paq-cruceros .titulo-crucero-paq p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1, .pag-paq .paq-cruceros .card-paq-cruceros2, .pag-paq .paq-cruceros .card-paq-cruceros3 {
     width: 350px;
@@ -651,10 +650,10 @@ main .section .principal-3:hover {
     padding: 0.5rem;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 h3, .pag-paq .paq-cruceros .card-paq-cruceros2 h3, .pag-paq .paq-cruceros .card-paq-cruceros3 h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 p, .pag-paq .paq-cruceros .card-paq-cruceros2 p, .pag-paq .paq-cruceros .card-paq-cruceros3 p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 img, .pag-paq .paq-cruceros .card-paq-cruceros2 img, .pag-paq .paq-cruceros .card-paq-cruceros3 img {
     width: 150px;
@@ -686,7 +685,7 @@ main .section .principal-3:hover {
     font-size: 18px;
   }
   .pag-paq .principal-paq .card-paq1 p, .pag-paq .principal-paq .card-paq2 p, .pag-paq .principal-paq .card-paq3 p, .pag-paq .principal-paq .card-paq4 p, .pag-paq .principal-paq .card-paq5 p, .pag-paq .principal-paq .card-paq6 p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .principal-paq .card-paq1 img, .pag-paq .principal-paq .card-paq2 img, .pag-paq .principal-paq .card-paq3 img, .pag-paq .principal-paq .card-paq4 img, .pag-paq .principal-paq .card-paq5 img, .pag-paq .principal-paq .card-paq6 img {
     width: 250px;
@@ -709,7 +708,7 @@ main .section .principal-3:hover {
     font-size: 18px;
   }
   .pag-paq .paq-cruceros .titulo-crucero-paq p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1, .pag-paq .paq-cruceros .card-paq-cruceros2, .pag-paq .paq-cruceros .card-paq-cruceros3 {
     width: 300px;
@@ -718,10 +717,10 @@ main .section .principal-3:hover {
     padding: 0.5rem;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 h3, .pag-paq .paq-cruceros .card-paq-cruceros2 h3, .pag-paq .paq-cruceros .card-paq-cruceros3 h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 p, .pag-paq .paq-cruceros .card-paq-cruceros2 p, .pag-paq .paq-cruceros .card-paq-cruceros3 p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .pag-paq .paq-cruceros .card-paq-cruceros1 img, .pag-paq .paq-cruceros .card-paq-cruceros2 img, .pag-paq .paq-cruceros .card-paq-cruceros3 img {
     width: 150px;
@@ -793,10 +792,10 @@ main .section .principal-3:hover {
     font-weight: 300;
   }
   .cruceros-principal .card-cruceros .card-individual h3 {
-    font-size: 12px;
+    font-size: 16px;
   }
   .cruceros-principal .card-cruceros .card-individual p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -824,7 +823,7 @@ main .section .principal-3:hover {
     font-size: 18px;
   }
   .cruceros-principal .card-cruceros .card-individual p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -904,6 +903,14 @@ main .section .principal-3:hover {
   text-align: center;
   margin: 2rem;
 }
+.main-nosotros .formulario-mio .btn-formularios {
+  border: 1px solid rgb(204, 170, 170);
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgb(248, 248, 248);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-self: center;
+}
 @media (max-width: 768px) {
   .main-nosotros .principal-nos {
     display: flex;
@@ -918,7 +925,7 @@ main .section .principal-3:hover {
     font-weight: 800;
   }
   .main-nosotros .principal-nos h3, .main-nosotros .principal-nos h5, .main-nosotros .principal-nos p {
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 300;
   }
   .main-nosotros .principal-nos .card-staff-1, .main-nosotros .principal-nos .card-staff-2, .main-nosotros .principal-nos .card-staff-3 {
@@ -951,7 +958,7 @@ main .section .principal-3:hover {
     font-weight: 800;
   }
   .main-nosotros .principal-nos h3, .main-nosotros .principal-nos h5, .main-nosotros .principal-nos p {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
   }
   .main-nosotros .principal-nos .card-staff-1, .main-nosotros .principal-nos .card-staff-2, .main-nosotros .principal-nos .card-staff-3 {
@@ -961,11 +968,11 @@ main .section .principal-3:hover {
   .main-nosotros .formulario-mio {
     margin: 1rem;
     padding: 2rem;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
   }
   .main-nosotros .formulario-mio .btn-vuelo, .main-nosotros .formulario-mio .btn-formularios {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
   }
 }
@@ -997,10 +1004,10 @@ footer .derechos {
 }
 @media (max-width: 768px) {
   footer h3, footer a {
-    font-size: 12px;
+    font-size: 16px;
   }
   footer .derechos h4 {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1008,7 +1015,7 @@ footer .derechos {
     font-size: 18px;
   }
   footer .derechos h4 {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
