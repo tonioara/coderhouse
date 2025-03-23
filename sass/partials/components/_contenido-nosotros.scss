@@ -36,14 +36,14 @@
     .card-staff-2{
         @extend .card-staff-1;
         grid-area: card-nos2;
-          /*transiciones*/
-        transition: transform 0.2s ease-in;
+        
+        
     }
     .card-staff-3{
         @extend .card-staff-1;
         grid-area: card-nos3;
-          /*transiciones*/
-        transition: transform 0.2s ease-in;
+        
+        
     }
     .card-staff-1:hover{
         transform: scale(1.1);
