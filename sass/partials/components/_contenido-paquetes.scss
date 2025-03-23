@@ -3,7 +3,7 @@
     .principal-paq{
         display: grid;
         grid-template-columns: repeat(3,380px);
-        gap: 2rem;
+        gap: 1.5rem;
         grid-template-areas: "titulo titulo titulo"
                              "miami cusco madrid"
                             "barce bali australia";

@@ -456,7 +456,7 @@ main .section .principal-3:hover {
 .pag-paq .principal-paq {
   display: grid;
   grid-template-columns: repeat(3, 380px);
-  gap: 2rem;
+  gap: 1.5rem;
   grid-template-areas: "titulo titulo titulo" "miami cusco madrid" "barce bali australia";
   justify-self: center;
 }
@@ -870,9 +870,13 @@ main .section .principal-3:hover {
 }
 .main-nosotros .card-staff-2 {
   grid-area: card-nos2;
+  /*transiciones*/
+  transition: transform 0.2s ease-in;
 }
 .main-nosotros .card-staff-3 {
   grid-area: card-nos3;
+  /*transiciones*/
+  transition: transform 0.2s ease-in;
 }
 .main-nosotros .card-staff-1:hover, .main-nosotros .card-staff-2:hover, .main-nosotros .card-staff-3:hover {
   transform: scale(1.1);
