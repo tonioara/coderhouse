@@ -1,5 +1,6 @@
 header{
     .navbar-mio{
+        @include flex(none,center,center );
         @include boder-shadow($borde,25px, $sombra);
         @include mar-padd(1rem,auto );
         justify-self: center;
@@ -10,6 +11,10 @@ header{
     .nav-mio{
         background-color: map-get($colors,crema );
         @include boder-shadow($borde,20px, $sombra);
+
+
+
+
         .navegador-mio{
             justify-content: center;
             a{
