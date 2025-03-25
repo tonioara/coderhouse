@@ -54,6 +54,7 @@ header {
   }*/
 }
 header .navbar-mio {
+  width: min-content;
   display: flex;
   flex-direction: none;
   justify-content: center;
