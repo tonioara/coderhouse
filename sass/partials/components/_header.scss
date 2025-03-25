@@ -11,10 +11,8 @@ header{
     .nav-mio{
         background-color: map-get($colors,crema );
         @include boder-shadow($borde,20px, $sombra);
-
-
-
-
+        .btn-mio{
+        }
         .navegador-mio{
             justify-content: center;
             a{
