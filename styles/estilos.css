@@ -67,7 +67,7 @@ header .navbar-mio {
   justify-self: center;
 }
 header .navbar-mio div {
-  width: 3rem;
+  width: 200px;
 }
 header .navbar-mio div a {
   margin: 0 auto;
