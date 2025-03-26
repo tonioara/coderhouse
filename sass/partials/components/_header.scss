@@ -1,6 +1,6 @@
 header{
     .navbar-mio{
-        width: min-content;
+
         @include flex(none,center,center );
         @include boder-shadow($borde,25px, $sombra);
         @include mar-padd(1rem,auto );
