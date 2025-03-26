@@ -1,5 +1,6 @@
  //pagina paquete//
  .pag-paq{
+    overflow: hidden;
     .principal-paq{
         display: grid;
         grid-template-columns: repeat(3,380px);

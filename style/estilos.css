@@ -225,6 +225,10 @@ main .section .principal-3:hover {
   margin-top: 4rem;
 }
 
+.body {
+  overflow: hidden;
+}
+
 .principal-cruceros .img-HV {
   width: 200px;
   height: 200px;
@@ -409,6 +413,9 @@ main .section .principal-3:hover {
   }
 }
 
+.pag-paq {
+  overflow: hidden;
+}
 .pag-paq .principal-paq {
   display: grid;
   grid-template-columns: repeat(3, 380px);

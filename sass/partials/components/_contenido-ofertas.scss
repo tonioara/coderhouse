@@ -3,6 +3,10 @@
     @include medidas(250px,200px );
     margin-top: 4rem;
 }
+.body{
+
+    overflow: hidden;
+}
 .principal-cruceros{
     .img-HV{
         @include medidas(200px,200px );
