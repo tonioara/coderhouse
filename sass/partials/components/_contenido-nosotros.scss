@@ -62,7 +62,7 @@
         margin-top: 2rem;
         @include boder-shadow($borde,20px ,$sombra );
         @include mar-padd(1rem,3rem );
-        @include medidas(450px, 350px);
+        @include medidas(550px, 400px);
         @include flex(column, center, none);
         color:  map-get($colors, blanco) ;
         justify-self: center;
