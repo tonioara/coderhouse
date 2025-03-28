@@ -2,11 +2,7 @@ footer{
     .logo-fb{
         @include medidas(40px,40px );
     }
-   
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column,center ,center );
     text-align: center;
     color: map-get($colors, blanco );
     margin-top: 4rem;
