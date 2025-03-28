@@ -4,10 +4,13 @@ header{
         @include flex(none,center,center );
         @include boder-shadow($borde,25px, $sombra);
         @include mar-padd(1rem,auto );
-        justify-items: center;
-        justify-content: center;
-        justify-self: center;
+       
+        
+        
             a{
+                justify-content: center;
+justify-self: center;
+
                 margin: 0 auto;
             }
     }
